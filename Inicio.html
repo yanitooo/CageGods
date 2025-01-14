@@ -1,0 +1,381 @@
+<!-- 
+    Página de “Inicio”:
+        a) Tendrá que incluir un carrusel de imágenes que ocupe todo el ancho de la pantalla
+           (aunque la página en sí tenga un diseño con márgenes laterales), las cuales incluirán un
+            texto encima de la propia imagen de manera que sea legible. Este texto deberá
+            adaptarse a las diferentes resoluciones, tanto en tamaño como en posición.
+
+        b) Se recomienda que las imágenes tengan un ancho de 1920px y una altura de entre 400px
+           y 750px dependiendo del diseño.
+        c) En el resto de la página se puede añadir lo que se quiera.
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cage Gods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="Varios/iconoPagina.ico">
+
+</head>
+
+<body>
+    <section class="cookies">
+        <div id="cookiesFondoOscuro"></div>
+        <div id="cajaCookies">
+            <h2>Antes de entrar</h2>
+            <p>Usamos cookies para mejorar tu experiencia. ¿Aceptas su uso?</p>
+            <button id="botonAceptarCk">Aceptar</button>
+            <button id="botonRechazarCk">Rechazar</button>
+        </div>
+    </section>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <!--Nav izquierda-->
+            <div class="navbar-left">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link paginaActiva" href="Inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Paginas/HallOfFame.html">Hall Of Fame</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Logo-->
+            <div class="navbar-logo">
+                <a href="Inicio.html"><img src="Varios/logoGrande-Blanco.svg" id="logo" alt="Logo"></a>
+            </div>
+            <!--Nav derecha-->
+            <div class="navbar-right">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Paginas/Galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Paginas/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--boton burger-->
+            <button class="navbar-toggler" id="navbar-toggler">&#9776;</button>
+
+            <!--menu desplegable-->
+            <div class="dropdown-menu animate__animated" id="dropdown-menu">
+                <a class="nav-link paginaActiva d-flex justify-content-center align-items-center" href="Inicio.html"><img src="imagenes/iconosnav/icono-inicio-blanco.png" width="20px" class="iconosNavbar">Inicio</a>
+                <a class="nav-link d-flex justify-content-center align-items-center" href="Paginas/HallOfFame.html"><img src="imagenes/iconosnav/icono-hall-blanco.png" width="20px" class="iconosNavbar">Hall Of Fame</a>
+                <a class="nav-link d-flex justify-content-center align-items-center" href="Paginas/Galeria.html"><img src="imagenes/iconosnav/icono-galeria-blanco.png" width="20px" class="iconosNavbar">Galeria</a>
+                <a class="nav-link d-flex justify-content-center align-items-center" href="Paginas/Contacto.html"><img src="imagenes/iconosnav/icono-contacto-blanco.png" width="20px" class="iconosNavbar">Contacto</a>
+            </div>
+        </nav>
+
+        <!--carousel-->
+        <div id="backgroundCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="Carrousel1"></div>
+                <div class="carousel-item" id="Carrousel2"></div>
+                <div class="carousel-item" id="Carrousel3"></div>
+            </div>
+        </div>
+
+        <div class="capaOscura"></div>
+
+        <div class="carousel-text">
+            <img src="Varios/logoGrande-Blanco.svg" id="logoCarousel">
+            <p id="textoCarousel">Donde las leyendas forjan su historia en las artes marciales</p>
+        </div>
+    </header>
+
+    <section class="contenido-inicio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 titulo-inicio">
+                    <h2>El arte de las MMA</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 texto-intro">
+                    <p>
+                        Las Artes Marciales Mixtas (MMA, por sus siglas en inglés) son una disciplina deportiva y de
+                        combate que combina técnicas
+                        de distintas artes marciales como el Muay Thai,Jiu-Jitsu, Boxeo, Karate y Lucha Libre.
+                        Este arte busca desarrollar habilidades tanto en el golpeo como en el grappling,
+                        permitiendo a los practicantes adaptarse a cualquier situación en el combate. Las MMA destacan
+                        por su versatilidad,
+                        estrategia y exigencia física, representando un equilibrio entre técnica, fuerza y resistencia.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/boxeo.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Boxeo</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+
+                                            El boxeo es un deporte de combate donde dos oponentes, usando guantes,
+                                            buscan atacar y defenderse con golpes permitidos bajo reglas estrictas.
+                                            Requiere fuerza, resistencia y estrategia para anticipar movimientos y
+                                            mantener el control en el cuadrilátero.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/muaythai.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Muay Thai</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            El Muay Thai, o arte de los ocho miembros, es un arte marcial originario de
+                                            Tailandia que utiliza puños, codos, rodillas y piernas como armas. Combina
+                                            golpes potentes con técnicas de agarre y barrido, destacando por su
+                                            intensidad y resistencia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/karate.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Karate</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            El Karate es un arte marcial japonés que combina técnicas de golpeo con
+                                            manos, pies y codos, enfocándose en precisión y control. Sus movimientos son
+                                            rápidos y
+                                            efectivos, orientados tanto al combate como a la defensa personal.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/taekwondo2.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Taekwondo</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            El Taekwondo es un arte marcial originario de Corea que combina técnicas de
+                                            patadas, puños y defensa personal. Se caracteriza por su enfoque en patadas
+                                            altas y espectaculares, velocidad y precisión, promoviendo la disciplina, el
+                                            autocontrol y el desarrollo físico y mental.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/jiujitsu.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Jiu Jitsu</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            El Jiu-Jitsu es un arte marcial de origen japonés enfocado en el combate
+                                            cuerpo a cuerpo, utilizando técnicas de agarre, estrangulaciones y palancas.
+                                            Su filosofía se basa en aprovechar la fuerza del oponente, destacando por su
+                                            efectividad en el suelo y su estrategia técnica.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/lucha.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Wrestling</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            El Wrestling, o lucha libre olímpica, es un deporte de combate que se centra
+                                            en el control y derribo del oponente mediante técnicas de fuerza, agarres y
+                                            proyecciones. Destaca por su intensidad física, estrategia táctica y
+                                            habilidad para dominar en el suelo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/judo.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Judo</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            El Judo es un arte marcial japonés que se centra en proyectar y controlar al
+                                            oponente utilizando su propia fuerza. Combina técnicas de lanzamientos,
+                                            inmovilizaciones y llaves, destacando por su fluidez, estrategia y enfoque
+                                            en el respeto y la disciplina.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center iconos">
+                                <img src="imagenes/iconos_artes_marciales/capoeira.png" alt="Logo">
+                            </div>
+                            <div class="col-9 quitarEnSM">
+                                <div class="row titulos-cartas">
+                                    <div class="col-12">
+                                        <h3>Capoeira</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            La Capoeira es un arte marcial afrobrasileño que combina lucha, danza y
+                                            música en un flujo continuo de movimientos. Se caracteriza por sus
+                                            acrobacias, patadas giratorias y esquivas, destacando por su ritmo,
+                                            creatividad y expresión cultural única.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 titulo-eventos text-center">
+                    <h2>Próximos eventos importantes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center">
+                    <h3 class="text-center titulo-posts">UFC</h3>
+                    <div>
+                        <blockquote class="instagram-media posts"
+                            data-instgrm-permalink="https://www.instagram.com/p/DDfQ2Z4vhR5/" data-instgrm-version="14"
+                            style="background:#EBF2EB; border:0; border-radius:3px; box-shadow:0 0 1px 0 #EBF2EB,0 1px 10px 0 #EBF2EB; margin: 1px; padding:0;">
+                        </blockquote>
+                        <script src="https://www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center">
+                    <h3 class="text-center titulo-posts">ONE Championship</h3>
+                    <div>
+                        <blockquote class="instagram-media posts"
+                            data-instgrm-permalink="https://www.instagram.com/p/DD9CRt4ssM3/" data-instgrm-version="14"
+                            style="background:#EBF2EB; border:0; border-radius:3px; box-shadow:0 0 1px 0 #EBF2EB,0 1px 10px 0 #EBF2EB; margin: 1px; padding:0;">
+                        </blockquote>
+                        <script src="https://www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="nav justify-content-center border-bottom pt-5 pb-4 mb-3">
+            <li class="nav-item"><a href="Inicio.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="Paginas/HallOfFame.html" class="nav-link px-2 text-body-secondary">Hall Of
+                    Fame</a></li>
+            <li class="nav-item"><a href="Paginas/Galeria.html" class="nav-link px-2 text-body-secondary">Galeria</a>
+            </li>
+            <li class="nav-item"><a href="Paginas/Contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 CageGods, Inc</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

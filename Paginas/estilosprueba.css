@@ -1,0 +1,103 @@
+.navbar-custom {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #0D0D0D;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-custom.expanded {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* Subrayado dinámico */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    overflow: hidden; /* Para controlar el subrayado animado */
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: all 0.3s ease;
+}
+
+/* Movimiento dinámico dependiendo del cursor */
+.nav-link:hover::before {
+    width: 100%;
+    transform: translateX(calc(var(--mouse-x, 0px) - 50%));
+}
+
+/* Estado activo (subrayado fijo) */
+.nav-link.active::before {
+    width: 100%;
+    transform: translateX(0);
+}
+
+/* Ajuste visual para navbar personalizado */
+.nav-item {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+.navbar-toggler {
+    display: none;
+    color: white;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.navbar-left {
+    margin-left: 30px;
+}
+
+.navbar-right {
+    margin-right: 30px;
+}

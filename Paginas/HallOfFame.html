@@ -1,0 +1,712 @@
+<!--
+Tercera página:
+Esta página es de diseño libre, pero como mínimo incluirá:
+        a) Dos vídeos con un texto descriptivo.
+        b) Dos imágenes con un texto descriptivo.
+Tanto los vídeos como las imágenes tendrán su texto en un lateral en pantallas large y
+superiores. En las inferiores se verá el texto debajo de las imágenes y del vídeo.
+        c) Un banner en la posición que se quiera. En la vista Extra Small el banner se tendrá que
+quedar fijo en la parte inferior de la pantalla del móvil y tendrá una “X” para poder
+ocultarlo.
+Se valorará que toda esta página se diseñe con formato de timeline
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cage Gods</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="icon" href="../Varios/iconoPagina.ico">
+
+</head>
+
+<body>
+        <section class="cookies">
+                <div id="cookiesFondoOscuro"></div>
+                <div id="cajaCookies">
+                    <h2>Antes de entrar</h2>
+                    <p>Usamos cookies para mejorar tu experiencia. ¿Aceptas su uso?</p>
+                    <button id="botonAceptarCk">Aceptar</button>
+                    <button id="botonRechazarCk">Rechazar</button>
+                </div>
+            </section>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-custom">
+                        <!--Nav izquierda-->
+                        <div class="navbar-left">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../Inicio.html">Inicio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link paginaActiva" href="HallOfFame.html">Hall Of Fame</a>
+                                        </li>
+                                </ul>
+                        </div>
+                        <!--Logo-->
+                        <div class="navbar-logo">
+                                <a href="../Inicio.html"><img src="../Varios/logoGrande-Blanco.svg" id="logo" alt="Logo"></a>
+                        </div>
+                        <!--Nav derecha-->
+                        <div class="navbar-right">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="Galeria.html">Galeria</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="Contacto.html">Contacto</a>
+                                        </li>
+                                </ul>
+                        </div>
+
+                        <!--boton burger-->
+                        <button class="navbar-toggler" id="navbar-toggler">&#9776;</button>
+
+                        <!--menu desplegable-->
+                        <div class="dropdown-menu animate__animated" id="dropdown-menu">
+                                <a class="nav-link d-flex justify-content-center align-items-center" href="../Inicio.html"><img src="../imagenes/iconosnav/icono-inicio-blanco.png" width="20px" class="iconosNavbar">Inicio</a>
+                                <a class="nav-link d-flex justify-content-center align-items-center paginaActiva" href="HallOfFame.html"><img src="../imagenes/iconosnav/icono-hall-blanco.png" width="20px" class="iconosNavbar">Hall Of Fame</a>
+                                <a class="nav-link d-flex justify-content-center align-items-center" href="Galeria.html"><img src="../imagenes/iconosnav/icono-galeria-blanco.png" width="20px" class="iconosNavbar">Galeria</a>
+                                <a class="nav-link d-flex justify-content-center align-items-center" href="Contacto.html"><img src="../imagenes/iconosnav/icono-contacto-blanco.png" width="20px" class="iconosNavbar">Contacto</a>
+                        </div>
+                </nav>
+        </header>
+        <div class="banner">
+                <div class="container-fluid ">
+                        <div class="row">
+                                <div class="col-6">
+                                        <h3>Ultimas Noticias</h3>
+                                        <p id="textoBanner">Dana white confirma la revancha de Connor Mcgregor contra Khabib Nurmagomedov para febrero 2025
+                                           sigue las noticias de la revancha mas esperada de la historia aqui en CageGods, envianos tu informacion en la pagina de <a href="Contacto.html">Contacto</a> y te mantendremos infromado con nuestro newlestter semanal.
+                                        </p>
+                                </div>
+                                <div class="col-6 colImagen">
+                                        <div class="row justify-content-end">
+                                                <button id="quitarBanner">X</button>
+                                        </div>
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                                <img src="../imagenes/mackhabib.jpg" width="100%" >
+                                        </div>
+                                       
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <section class="top3">
+                <div class="container">
+                        <div class="row titulo-hall">
+                                <div class="col-12 text-center">
+                                        <h2 class="titulinTop3"> Top 3 de la historia</h2>
+                                </div>
+                                <div class="col-12 text-center texto-inicio-hall" id="textoHall">
+                                        <p>Los deportes de contacto han tenido un aumento de popularidad en los ultimos
+                                                años y con ello la aparicion de mas
+                                                y mas atletas pero no todos tienen la misma capacidad para volver con el
+                                                cinturon a casa, aunque se consumen muchos
+                                                deportes distintos hay tres que predominan en espectadores, actualmente
+                                                las mma son las competiciones mas consumidas
+                                                ,con diferencia la que mas atencion atrae es la UFC, luego en cuanto a
+                                                nivel de espectadores van el boxeo y el Jiu-Jitsu </p>
+                                </div>
+                        </div>
+                        <div class="row mejores-hist">
+                                <!-- Card 1 -->
+                                <div class="col-md-4 col-4 cartas-hall d-flex justify-content-center">
+                                        <div class="card cartasTop3" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal1">
+                                                <img src="../imagenes/halloffame/myke.jpg" class="card-img-top imgTop3"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Myke Tyson</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="col-md-64 col-4 cartas-hall d-flex justify-content-center">
+                                        <div class="card cartasTop3" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal2">
+                                                <img src="../imagenes/halloffame/jon.jpg" class="card-img-top imgTop3"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Jon Jones</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="col-md-4 col-4 cartas-hall d-flex justify-content-center">
+                                        <div class="card cartasTop3" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal3">
+                                                <img src="../imagenes/halloffame/gordon.jpg" class="card-img-top imgTop3"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Gordon Ryan</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+
+                        <!-- Modales -->
+                        <!-- Modal 1 Tyson-->
+                        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <video src="../imagenes/halloffame/tyson.mp4"
+                                                                                                controls muted></video>
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Myke Tyson</h4>
+                                                                                <p>Tambien conocido como Iron Mike o Kid
+                                                                                        Dinamite es un exboxeador
+                                                                                        estadounidense y uno de los
+                                                                                        pesos pesados más icónicos de la
+                                                                                        historia. En 1986, se convirtió
+                                                                                        en el campeón mundial de peso
+                                                                                        pesado más joven con solo 20
+                                                                                        años. Unificó los títulos WBC,
+                                                                                        WBA e IBF y finalizó su carrera
+                                                                                        con un récord de 50-6 (44 KOs).
+                                                                                        Es recordado por su potencia,
+                                                                                        velocidad y estilo agresivo en
+                                                                                        el ring.</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Modal 2 JonJones-->
+                        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <video src="../imagenes/halloffame/Jones.mp4"
+                                                                                                controls muted></video>
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Jon Jones</h4>
+                                                                                <p>Jon "Bones" Jones es un luchador
+                                                                                        estadounidense de artes
+                                                                                        marciales mixtas y uno de los
+                                                                                        mejores en la historia de la
+                                                                                        UFC. Debutó en 2008 y se
+                                                                                        convirtió en el campeón más
+                                                                                        joven de peso semipesado en
+                                                                                        2011, con 23 años. Ha defendido
+                                                                                        su título un récord de 14 veces
+                                                                                        y ostenta un récord profesional
+                                                                                        de 27-1 (1 NC). Conocido por su
+                                                                                        técnica versátil y dominio, es
+                                                                                        considerado una leyenda del
+                                                                                        deporte.</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Modal 3 GordonRyan-->
+                        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <video src="../imagenes/halloffame/ryan.mp4"
+                                                                                                controls muted></video>
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Gordon Ryan</h4>
+                                                                                <p>Gordon Ryan es un luchador
+                                                                                        estadounidense de jiu-jitsu
+                                                                                        brasileño y grappling,
+                                                                                        considerado uno de los mejores
+                                                                                        de todos los tiempos. Ha ganado
+                                                                                        múltiples títulos mundiales de
+                                                                                        la ADCC, IBJJF y otros torneos
+                                                                                        de élite, destacándose por su
+                                                                                        técnica y dominio. Conocido como
+                                                                                        el "Rey", ha redefinido el
+                                                                                        deporte con su estilo innovador
+                                                                                        y éxito en competiciones de alto
+                                                                                        nivel. A lo largo de su carrera,
+                                                                                        ha acumulado un impresionante
+                                                                                        récord de 157 victorias, 9
+                                                                                        derrotas y 3 empates. </p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+        </section>
+        <section class="Boxeo">
+                <div class="container">
+                        <div class="row titulo-resto">
+                                <div class="col-12 text-center">
+                                        <h2> Los goats del boxeo</h2>
+                                </div>
+                        </div>
+                        <div class="row mejores-resto">
+                                <!-- Card 4 -->
+                                <div class="col-md-4 col-12 cartas-hall d-flex justify-content-center">
+                                        <div class="card" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal4">
+                                                <img src="../imagenes/halloffame/mayweather.jpg" class="card-img-top"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Floyd Mayweather</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="col-md-4 col-12 cartas-hall d-flex justify-content-center">
+                                        <div class="card" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal5">
+                                                <img src="../imagenes/halloffame/ali.jpg" class="card-img-top"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Muhammad Ali</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Card 6 -->
+                                <div class="col-md-4 col-12 cartas-hall d-flex justify-content-center">
+                                        <div class="card" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal6">
+                                                <img src="../imagenes/halloffame/alvarez.jpg" class="card-img-top"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Canelo Alvarez</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <hr>
+
+
+
+                        <!-- Modales -->
+                        <!-- Modal 4 Mayweather-->
+                        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <img src="../imagenes/halloffame/floyd_mayweather.jpg"
+                                                                                                alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Floyd Mayweather</h4>
+                                                                                <p> es un exboxeador estadounidense,
+                                                                                        considerado uno de los mejores
+                                                                                        de la historia. Se retiró
+                                                                                        invicto con un récord de 50-0
+                                                                                        (27 KOs) y ganó títulos
+                                                                                        mundiales en cinco categorías:
+                                                                                        superpluma, ligero, superligero,
+                                                                                        wélter y superwélter. Reconocido
+                                                                                        por su defensa impecable y
+                                                                                        precisión, también ostenta
+                                                                                        récords de ingresos en el boxeo,
+                                                                                        consolidándose como una leyenda
+                                                                                        del deporte.</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Modal 5 Muhammad Ali-->
+                        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <img src="../imagenes/halloffame/muhammad_ali.jpg"
+                                                                                                alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Muhammad Ali</h4>
+                                                                                <p>Muhammad Ali fue un boxeador
+                                                                                        estadounidense y una de las
+                                                                                        figuras más icónicas del
+                                                                                        deporte. Tres veces campeón
+                                                                                        mundial de peso pesado, finalizó
+                                                                                        su carrera con un récord de 56-5
+                                                                                        (37 KOs). Conocido por su estilo
+                                                                                        único, velocidad y carisma,
+                                                                                        protagonizó peleas históricas
+                                                                                        como el "Rumble in the Jungle" y
+                                                                                        el "Thrilla in Manila". Ali es
+                                                                                        recordado como un símbolo de
+                                                                                        grandeza dentro y fuera del
+                                                                                        ring.</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Modal 6 CaneloAlvarez-->
+                        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <img src="../imagenes/halloffame/canelo_alvarez.jpg"
+                                                                                                alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Canelo Alvarez</h4>
+                                                                                <p>
+                                                                                        Saúl "Canelo" Álvarez es un
+                                                                                        boxeador mexicano y uno de los
+                                                                                        mejores de su generación. Con un
+                                                                                        récord profesional de 62-2-2 (39
+                                                                                        KOs), ha sido campeón mundial en
+                                                                                        cuatro divisiones: superwélter,
+                                                                                        medio, supermedio y semipesado.
+                                                                                        En 2021, hizo historia al
+                                                                                        unificar los títulos de las
+                                                                                        cuatro principales
+                                                                                        organizaciones en peso
+                                                                                        supermedio. Es conocido por su
+                                                                                        defensa sólida, potente pegada y
+                                                                                        victorias sobre grandes rivales
+                                                                                        como Gennady Golovkin y Miguel
+                                                                                        Cotto.</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+        </section>
+
+        <section class="MMA">
+                <div class="container">
+                        <div class="row titulo-resto">
+                                <div class="col-12 text-center">
+                                        <h2> Los goats de las mma</h2>
+
+                                </div>
+                        </div>
+                        <div class="row mejores-resto">
+                                <!-- Card 4 -->
+                                <div class="col-md-4 col-12 cartas-hall d-flex justify-content-center">
+                                        <div class="card" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal7">
+                                                <img src="../imagenes/halloffame/mouse.jpg" class="card-img-top"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Demetrious Johnson</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="col-md-4 col-12 cartas-hall d-flex justify-content-center">
+                                        <div class="card" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal8">
+                                                <img src="../imagenes/halloffame/gsp.jpg" class="card-img-top"
+                                                        alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">George St Pierre</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Card 6 -->
+                                <div class="col-md-4 col-12 cartas-hall d-flex justify-content-center">
+                                        <div class="card" style="cursor: pointer;" data-bs-toggle="modal"
+                                                data-bs-target="#modal9">
+                                                <img src="../imagenes/halloffame/nurmadurkedurk.jpg"
+                                                        class="card-img-top" alt="Card Image">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Khabib Nurmagomedov</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+
+                        <!-- Modales -->
+                        <!-- Modal 7 Mighty Mouse-->
+                        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <img src="../imagenes/halloffame/demetious_johnson.webp"
+                                                                                                alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Demetrious Johnson</h4>
+                                                                                <p>
+                                                                                        Demetrious "Mighty Mouse"
+                                                                                        Johnson es un exluchador
+                                                                                        estadounidense de artes
+                                                                                        marciales mixtas, considerado
+                                                                                        uno de los mejores de la
+                                                                                        historia. Fue el primer campeón
+                                                                                        de peso mosca de la UFC,
+                                                                                        defendiendo su título en un
+                                                                                        récord de 11 ocasiones. También
+                                                                                        conquistó el Gran Premio y el
+                                                                                        título mundial de peso mosca en
+                                                                                        ONE Championship. Con un récord
+                                                                                        profesional de 25-4-1, es
+                                                                                        reconocido por su velocidad,
+                                                                                        técnica y dominio en el deporte.
+                                                                                </p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Modal 8 GSP-->
+                        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <img src="../imagenes/halloffame/george_stpierre.jpg"
+                                                                                                alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>George St Pierre</h4>
+                                                                                <p>Es un exluchador
+                                                                                        canadiense de artes marciales
+                                                                                        mixtas, considerado uno de los
+                                                                                        mejores en la historia de la
+                                                                                        UFC. Con un récord profesional
+                                                                                        de 26-2, fue campeón de peso
+                                                                                        wélter en dos ocasiones y
+                                                                                        también conquistó el título de
+                                                                                        peso mediano en 2017. Defendió
+                                                                                        su cinturón de peso wélter en 9
+                                                                                        ocasiones consecutivas,
+                                                                                        destacándose por su estilo
+                                                                                        técnico y versátil. Es miembro
+                                                                                        del Salón de la Fama de la UFC
+                                                                                        desde 2020.</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Modal 9 Khabib-->
+                        <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                                <div class="row">
+                                                                        <!-- Video Column -->
+                                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                                                <div class="ratio ratio-16x9">
+                                                                                        <img src="../imagenes/halloffame/khabib_nurmagomedov.jpg"
+                                                                                                alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Text Column -->
+                                                                        <div class="col-lg-6">
+                                                                                <h4>Khabib Nurmagomedov</h4>
+                                                                                <p>
+                                                                                        Khabib Nurmagomedov es un
+                                                                                        exluchador ruso de artes
+                                                                                        marciales mixtas, considerado
+                                                                                        uno de los mejores de todos los
+                                                                                        tiempos. Se retiró invicto con
+                                                                                        un récord de 29-0. Fue campeón
+                                                                                        de peso ligero de la UFC,
+                                                                                        defendiendo su título en tres
+                                                                                        ocasiones. Conocido por su
+                                                                                        dominio en la lucha y su
+                                                                                        habilidad estratégica, dejó un
+                                                                                        legado imborrable en el deporte.
+                                                                                </p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+        </section>
+
+        <section class="eventos">
+                <div class="container-fluid">
+                        <div class="row titulo-resto">
+                                <div class="col-12 text-center">
+                                        <h2>Los mejores eventos de la historia</h2>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-12 text-center">
+                                        <h3 id="evento"> Evento</h3>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div>
+                                        <div class="col-12 text-center">
+                                                <p id="textoEvento"> Texto de los eventos</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-12 text-center">
+                                        <img src="../imagenes/flecha.svg"  class="flechas" id="flechaIzq">
+                                        <img src="../imagenes/flecha.svg" class="flechas" id="flechaDer">
+                                        
+                                </div>
+                        </div>
+                        <div class="row justify-content-center">
+                                <img src="../imagenes/mcgregorVSnateII.jpg" id="imagenEvento">
+                        </div>
+
+
+                </div>
+        </section>
+        <div class="arrow" id="flechaIzq">
+                <div class="arrow-top"></div>
+                <div class="arrow-bottom"></div>
+        </div>
+
+        <footer>
+                <ul class="nav justify-content-center border-bottom pt-5 pb-4 mb-3">
+                        <li class="nav-item"><a href="../Inicio.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item"><a href="HallOfFame.html" class="nav-link px-2 text-body-secondary">Hall Of Fame</a></li>
+                        <li class="nav-item"><a href="Galeria.html" class="nav-link px-2 text-body-secondary">Galeria</a></li>
+                        <li class="nav-item"><a href="Contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+                      </ul>
+                      <p class="text-center text-body-secondary">© 2024 CageGods, Inc</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../script/script.js"></script>
+</body>
+
+
+
+</html>
